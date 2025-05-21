@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Міні гра</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Кинути кубик</h1>
+    <div id="game">
+      <label for="betNumber">Поставити на число (1-6):</label>
+      <input type="number" id="betNumber" min="1" max="6" />
+      
+      <label for="betAmount">Ставка ($):</label>
+      <input type="number" id="betAmount" min="1" />
+      
+      <button onclick="rollDice()">Кинути кубик</button>
+      
+      <div id="result">
+        <p id="message"></p>
+        <p id="diceRoll"></p>
+        <p id="balance">Баланс: $100</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
